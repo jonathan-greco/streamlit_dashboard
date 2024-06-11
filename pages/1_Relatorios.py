@@ -35,7 +35,7 @@ def load_data(file_rel, nrows):
 #
 data_load_state = st.text('Carregando dados ...')
 
-data_relatorio_1 = load_data('./data/relatorio-2.csv', None)
+#data_relatorio_1 = load_data('./data/relatorio-2.csv', None)
 data_load_state.text("Dados concluídos!")
 
 # processando informacoes
@@ -43,12 +43,12 @@ lista_periodos_x = [
     "01/2024", "02/2024", "03/2024", "04/2024",	"05/2024", "06/2024"
 ]
 
-dicionario_peridos_valores = {}
+#dicionario_peridos_valores = {}
 
-dicionario_peridos_valores = data_relatorio_1.filter(lista_periodos_x)
-dicionario_peridos_valores = dicionario_peridos_valores.iloc[:-1 , :] #remove ultima linha
+#dicionario_peridos_valores = data_relatorio_1.filter(lista_periodos_x)
+#dicionario_peridos_valores = dicionario_peridos_valores.iloc[:-1 , :] #remove ultima linha
 
-print(dicionario_peridos_valores)
+#print(dicionario_peridos_valores)
 
 
 #chart_data = pd.DataFrame(x=data[COLUMN_customer_age], y=data[COLUMN_loan_amnt])
